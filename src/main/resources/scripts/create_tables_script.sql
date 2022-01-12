@@ -1,6 +1,5 @@
 
-CREATE TABLE "public"."accessory"
-(
+CREATE TABLE "public"."accessory" (
    id int PRIMARY KEY NOT NULL,
    name varchar(255) NOT NULL,
    price numeric(10,2) NOT NULL,
@@ -8,10 +7,9 @@ CREATE TABLE "public"."accessory"
    manufacturer text NOT NULL,
    material text NOT NULL,
    accessories_category text NOT NULL
-)
-;
-CREATE TABLE "public"."phone"
-(
+);
+
+CREATE TABLE "public"."phone"(
    id int PRIMARY KEY NOT NULL,
    name varchar(255) NOT NULL,
    price numeric(10,2) NOT NULL,
@@ -21,5 +19,4 @@ CREATE TABLE "public"."phone"
    display_resolution real,
    manufacturer text NOT NULL,
    material text NOT NULL
-)
-;
+);
